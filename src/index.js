@@ -16,7 +16,7 @@ const checkbox = document.querySelector('.theme-switch__toggle');
 const STORAGE_KEY = 'currentTheme';
 const savedTheme = localStorage.getItem(STORAGE_KEY);
 
-document.body.classList.add('.light-theme');
+document.body.classList.add(Theme.LIGHT);
 
 checkbox.addEventListener('change', onThemeChange);
 
